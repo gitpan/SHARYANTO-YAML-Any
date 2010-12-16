@@ -1,6 +1,6 @@
 package SHARYANTO::YAML::Any;
 BEGIN {
-  $SHARYANTO::YAML::Any::VERSION = '0.72';
+  $SHARYANTO::YAML::Any::VERSION = '0.721';
 }
 # ABSTRACT: SHARYANTO::YAML::Any - Pick a YAML implementation and use it.
 
@@ -8,7 +8,7 @@ use 5.005003;
 use strict;
 use Exporter ();
 
-$SHARYANTO::YAML::Any::VERSION   = '0.72';
+$SHARYANTO::YAML::Any::VERSION   = '0.721';
 @SHARYANTO::YAML::Any::ISA       = 'Exporter';
 @SHARYANTO::YAML::Any::EXPORT    = qw(Dump Load);
 @SHARYANTO::YAML::Any::EXPORT_OK = qw(DumpFile LoadFile);
@@ -141,7 +141,7 @@ SHARYANTO::YAML::Any - SHARYANTO::YAML::Any - Pick a YAML implementation and use
 
 =head1 VERSION
 
-version 0.72
+version 0.721
 
 =head1 SYNOPSIS
 
@@ -152,9 +152,9 @@ version 0.72
 =head1 DESCRIPTION
 
 SHARYANTO::YAML::Any is forked from YAML::Any. The difference is the order of
-implementation selection (YAML::Syck first) and the setting
-($YAML::Syck::ImplicitTyping is turned on, as any sane YAML user would do). The
-rest is YAML::Any's documentation.
+implementation selection (YAML::Syck first, as YAML::XS does not work well with
+some of my YAML docs) and the setting ($YAML::Syck::ImplicitTyping is turned on,
+as any sane YAML user would do). The rest is YAML::Any's documentation.
 
 There are several YAML implementations that support the Dump/Load API.
 This module selects the best one available and uses it.

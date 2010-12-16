@@ -3,7 +3,7 @@ NAME
     and use it.
 
 VERSION
-    version 0.72
+    version 0.721
 
 SYNOPSIS
         use SHARYANTO::YAML::Any;
@@ -12,7 +12,8 @@ SYNOPSIS
 
 DESCRIPTION
     SHARYANTO::YAML::Any is forked from YAML::Any. The difference is the
-    order of implementation selection (YAML::Syck first) and the setting
+    order of implementation selection (YAML::Syck first, as YAML::XS does
+    not work well with some of my YAML docs) and the setting
     ($YAML::Syck::ImplicitTyping is turned on, as any sane YAML user would
     do). The rest is YAML::Any's documentation.
 

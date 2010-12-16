@@ -17,7 +17,7 @@ my %module_build_args = (
     'Steven Haryanto <stevenharyanto@gmail.com>'
   ],
   'dist_name' => 'SHARYANTO-YAML-Any',
-  'dist_version' => '0.72',
+  'dist_version' => '0.721',
   'license' => 'perl',
   'module_name' => 'SHARYANTO::YAML::Any',
   'recommends' => {},
