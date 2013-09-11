@@ -1,10 +1,7 @@
 Revision history for SHARYANTO-YAML-Any
 
-0.721   2010-12-16
+0.56    2013-09-11 (SHARYANTO)
 
-        Some more note in POD.
-
-
-0.72    2010-12-16
-
-        First release.
+        - No functional changes. Split from SHARYANTO-Utils because I seldom use
+          this module now (will deprecate it later) plus it does not work well
+          with Pod::Weaver.
